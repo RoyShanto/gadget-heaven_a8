@@ -5,7 +5,7 @@ const Navbar = () => {
     const menu = <>
         <li><NavLink to={"/home"}>Home</NavLink></li>
         <li><NavLink to={"/home"}>Statistics</NavLink></li>
-        <li><NavLink to={"/home"}>Dashboard</NavLink></li>
+        <li><NavLink to={"/dashboard"}>Dashboard</NavLink></li>
     </>
     const {pathname} = useLocation();
     // console.log(pathname);

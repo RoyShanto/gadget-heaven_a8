@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify'
 import Root from './components/Root/Root.jsx'
 import ProductDetails from './components/ProductDetails/ProductDetails.jsx'
 import Home from './components/Home/Home.jsx'
+import Dashboard from './components/Dashboard/Dashboard.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,7 +19,13 @@ createRoot(document.getElementById('root')).render(
           <Route path="/home/product/category/:name" element={<Home />} />
           <Route path="/home/product/:id" element={<ProductDetails />} />
           <Route path="/home/product" element={<ProductDetails />} />
+
+          <Route path='/dashboard' element={<Dashboard/>} />
+          <Route path='/dashboard/cart' element={<Dashboard/>} />
+          <Route path='/dashboard/wishlist' element={<Dashboard/>} />
         </Route>
+        
+
       </Routes>
       <ToastContainer />
     </BrowserRouter>

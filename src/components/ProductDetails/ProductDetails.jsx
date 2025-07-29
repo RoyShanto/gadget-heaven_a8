@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import { setToCart, setToWishlist } from "../Utilities/DB";
 
 const ProductDetails = () => {
 
@@ -23,7 +24,24 @@ const ProductDetails = () => {
 
     const { id, productName, productPrice, productImage, category, description, stock, rating } = findProduct;
 
-    console.log(productName)
+    // console.log(productName)
+
+
+const handleAddToCart = (id) => {
+    setToCart(id)
+}
+const handleAddToWishlist = (id) => {
+    setToWishlist(id)
+}
+
+
+
+
+
+
+
+
+
 
     return (
         <div className='bg-base-200'>
@@ -69,11 +87,11 @@ const ProductDetails = () => {
 
                         <hr className="border-t-gray-300 border-dashed my-5" />
                         <div className='flex space-x-4 lg:justify-start md:justify-center max-sm:justify-center'>
-                            <button className='btn px-6 py-3 rounded-full bg-violet-500 text-white'>
+                            <button onClick={() => handleAddToCart(id)} className='btn px-6 py-3 rounded-full bg-violet-500 text-white'>
                                 Add To Card
                                 <img className='text-white' width="20" height="20" src="https://img.icons8.com/material-rounded/24/ffffff/shopping-cart.png" alt="shopping-cart--v1" />
                             </button>
-                            <a className="btn bg-white p-2 rounded-full">
+                            <a onClick={() => handleAddToWishlist(id)} className="btn bg-white p-2 rounded-full">
                                 <img width="20" height="20" src="https://img.icons8.com/ios/50/like.png" alt="like" />
                             </a>
                         </div>
