@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "productName": "OnePlus 12",
+    "productPrice": 1200,
+    "productImage": "https://i.ibb.co.com/20XxPMcC/One-Plus12.png",
+    "category": "Phones",
+    "description": "OnePlus 12 features a powerful Snapdragon chipset and blazing-fast charging.",
+    "stock": true,
+    "rating": 3.6
+  },
+  {
+    "id": 2,
+    "productName": "iPhone 14 Pro",
+    "productPrice": 999,
+    "productImage": "https://i.ibb.co.com/gFHRMVZW/i-Phone-14-Pro.png",
+    "category": "iPhone",
+    "description": "Apple's latest flagship phone with Dynamic Island and improved cameras.",
+    "stock": true,
+    "rating": 2.8
+  },
+  {
+    "id": 3,
+    "productName": "Samsung Galaxy S23",
+    "productPrice": 899,
+    "productImage": "https://i.ibb.co.com/F4kCc35T/Samsung-Galaxy-S23.webp",
+    "category": "Phones",
+    "description": "A powerful Android phone with an outstanding camera system.",
+    "stock": true,
+    "rating": 3.5
+  },
+  {
+    "id": 4,
+    "productName": "MacBook Air M2",
+    "productPrice": 1099,
+    "productImage": "https://i.ibb.co.com/XfPPSqhz/Mac-Book-Air-M2.png",
+    "category": "MacBook",
+    "description": "Lightweight MacBook with M2 chip and all-day battery life.",
+    "stock": true,
+    "rating": 4.7
+  },
+  {
+    "id": 5,
+    "productName": "Apple Watch Series 9",
+    "productPrice": 429,
+    "productImage": "https://i.ibb.co.com/h1g6C048/Apple-Watch-Series-9.png",
+    "category": "Smart Watches",
+    "description": "Smart watch with health tracking, always-on display, and fast charging.",
+    "stock": false,
+    "rating": 4.2
+  },
+  {
+    "id": 6,
+    "productName": "Sony WH-1000XM5 Headphones",
+    "productPrice": 379,
+    "productImage": "https://i.ibb.co.com/Hf8WG2Vv/Sony-WH-1000-XM5-Headphones.png",
+    "category": "Accessories",
+    "description": "Industry-leading noise canceling headphones with superb audio quality.",
+    "stock": true,
+    "rating": 2.9
+  },
+  {
+    "id": 7,
+    "productName": "Google Pixel 8",
+    "productPrice": 799,
+    "productImage": "https://i.ibb.co.com/PsrrkFBM/Google-Pixel-8.png",
+    "category": "Phones",
+    "description": "Smartphone with Google's best AI features and top-tier camera.",
+    "stock": true,
+    "rating": 4.6
+  },
+  {
+    "id": 8,
+    "productName": "Logitech MX Master 3S Mouse",
+    "productPrice": 99,
+    "productImage": "https://i.ibb.co.com/Kzy1261q/Logitech-MX-Master-3-S-Mouse.png",
+    "category": "Accessories",
+    "description": "Ergonomic mouse with customizable buttons and ultra-smooth scrolling.",
+    "stock": true,
+    "rating": 2.8
+  },
+  {
+    "id": 9,
+    "productName": "Samsung Galaxy Watch 6",
+    "productPrice": 329,
+    "productImage": "https://i.ibb.co.com/1G46b5pz/Samsung-Galaxy-Watch-6.webp",
+    "category": "Smart Watches",
+    "description": "Feature-rich smart watch with fitness tracking and long battery life.",
+    "stock": false,
+    "rating": 4.3
+  }
+]
