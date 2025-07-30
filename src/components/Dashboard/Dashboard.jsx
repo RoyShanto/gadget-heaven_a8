@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import { getCartData, getWishlistData } from "../Utilities/DB";
+import { deleteCart, deleteWishlist, getCartData, getWishlistData } from "../Utilities/DB";
 import { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Wishlist from "../wishlist/wishlist";
@@ -30,8 +30,15 @@ const Dashboard = () => {
         setWishlists(products.filter(product => cartId.includes(product.id)))
     }
 
-
-
+    const handleDeleteCart = (id) => {
+        const updatedCart = deleteCart(id)
+        setCartData(products.filter(product => updatedCart.includes(product.id)))
+    }
+    const handleDeleteWishlist = (id) => {
+        const updatedWishlist = deleteWishlist(id)
+        setWishlists(products.filter(product => updatedWishlist.includes(product.id)))
+    }
+    
     return (
         <div>
             <div className="text-center space-y-6 bg-violet-500 px-[402px] py-8">
@@ -50,9 +57,6 @@ const Dashboard = () => {
                             : "btn btn-outline text-lg font-extrabold px-16 py-3 rounded-full  border-2 border-amber-100 text-white"
                     }>Wishlist</NavLink>
                 </div>
-
-
-
             </div>
 
             <div id="cart" className="px-40">
@@ -66,7 +70,7 @@ const Dashboard = () => {
                 </div>
 
                 {
-                    cartData.map(cart => <Cart key={cart.id} cart={cart} />)
+                    cartData.map(cart => <Cart key={cart.id} cart={cart} handleDeleteCart={handleDeleteCart} />)
                 }
             </div>
 
@@ -76,7 +80,7 @@ const Dashboard = () => {
                 </div>
 
                 {
-                    wishlists.map(wishlist => <Wishlist key={wishlist.id} wishlist={wishlist} />)
+                    wishlists.map(wishlist => <Wishlist key={wishlist.id} wishlist={wishlist} handleDeleteWishlist={handleDeleteWishlist} />)
                 }
             </div>
 

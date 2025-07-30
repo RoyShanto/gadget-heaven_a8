@@ -1,9 +1,8 @@
-import React from 'react';
 
-const Wishlist = ({wishlist}) => {
-        const { id, productName, productPrice, productImage, category, description, stock, rating } = wishlist;
+const Wishlist = ({ wishlist, handleDeleteWishlist }) => {
 
-        console.log(productName)
+    const { id, productName, productPrice, productImage, category, description, stock, rating } = wishlist;
+    
     return (
         <div className="flex items-center justify-between p-8 bg-white shadow-sm mb-6 rounded-2xl">
             <div className="flex items-center space-x-8">
@@ -17,7 +16,7 @@ const Wishlist = ({wishlist}) => {
                     <button className='btn px-7 py-5 bg-violet-600 text-white font-semibold text-lg rounded-full'>Add To Card</button>
                 </div>
             </div>
-            <button className="btn text-red-500 text-3xl border-red-500 px-3 py-5 rounded-full">x</button>
+            <button onClick={() => handleDeleteWishlist(id)} className="btn text-red-500 text-3xl border-red-500 px-3 py-5 rounded-full">x</button>
         </div>
     );
 };
