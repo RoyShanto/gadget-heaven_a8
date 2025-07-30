@@ -8,9 +8,10 @@ const Root = () => {
         <div className="bg-base-200">
             <div className="lg:mx-7">
                 <Navbar />
-                <Outlet/>
-                <Footer/>
+                <Outlet />
+
             </div>
+            <Footer />
         </div>
     );
 };
