@@ -52,3 +52,8 @@ export const deleteWishlist = (id) => {
     localStorage.setItem('wishlist', JSON.stringify(updatedWishlist))
     return updatedWishlist
 }
+
+
+export const deleteAllCart = (ids) => {
+    localStorage.setItem('cartData', JSON.stringify(ids))
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Cart = ({cart, handleDeleteCart}) => {
+const Cart = ({ cart, handleDeleteCart }) => {
 
-        const { id, productName, productPrice, productImage, category, description, stock, rating } = cart;
+    const { id, productName, productPrice, productImage, category, description, stock, rating } = cart;
     return (
 
         <div className="flex items-center justify-between p-8 bg-white shadow-sm mb-6 rounded-2xl">
@@ -16,9 +16,9 @@ const Cart = ({cart, handleDeleteCart}) => {
                     <p className="text-xl font-semibold text-gray-700">Price: ${productPrice}</p>
                 </div>
             </div>
-            <button onClick={() => handleDeleteCart(id)} className="btn text-red-500 text-3xl border-red-500 px-3 py-5 rounded-full">x</button>
+            <h4 className={`${!stock ? 'text-3xl text-red-500' : 'hidden'} `}>Not Available</h4>
+            <img onClick={() => handleDeleteCart(id)} width="48" height="48" src="https://img.icons8.com/color/48/cancel--v1.png" alt="cancel--v1" />
         </div>
-
     );
 };
 

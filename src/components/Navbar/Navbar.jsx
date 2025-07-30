@@ -33,12 +33,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end space-x-4">
-                <a className="btn bg-white p-2 rounded-full">
+                <NavLink to={'/dashboard/cart'} className="btn bg-white p-2 rounded-full">
                     <img width="20" height="20" src="https://img.icons8.com/ios/50/shopping-cart--v1.png" alt="shopping-cart--v1" />
-                </a>
-                <a className="btn bg-white p-2 rounded-full">
+                </NavLink>
+                <NavLink to={'/dashboard/wishlist'} className="btn bg-white p-2 rounded-full">
                     <img width="20" height="20" src="https://img.icons8.com/ios/50/like.png" alt="like" />
-                </a>
+                </NavLink>
             </div>
         </div>
     );
